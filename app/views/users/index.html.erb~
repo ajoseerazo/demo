@@ -1,2 +1,11 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
+<div class="container">	
+	<h1>Users Management</h1>
+	</hr>
+	<div id="page">
+	</div>
+</div>
+
+<script>
+	window.router = new UserRouter({ users: <%= @users.to_json().html_safe %>});
+	Backbone.history.start();
+</script>
