@@ -1,0 +1,20 @@
+%form#edit-user
+	%legend
+		Editar Usuario
+
+	%label
+		Nombre
+	%input#firstname{:name => 'firstname', :value => '#{@user.firstname}'}
+
+	%label
+		Apellido
+	%input#lastname{:name => 'lastname', :value => '#{@user.lastname}'}
+
+	%label
+		Edad
+	%input#age{:age => 'age', :value => '#{@user.age}'}
+	%br
+	%button.btn{:type => 'submit'}
+		Actualizar
+	%button.btn.btn-danger#destroy
+		Eliminar

@@ -1,0 +1,16 @@
+<table class="table sprited">
+	<thead>	
+		<tr>
+			<th>Nombre</th>
+			<th>Apellido</th>
+			<th>Edad</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><%= user.firstname %></td>
+			<td><%= user.name %></td>
+			<td><%= user.name %></td>
+		</tr>
+	</tbody>
+</table>

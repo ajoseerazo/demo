@@ -1,0 +1,18 @@
+%form
+	%legend
+		Crear Usuario
+
+	%label
+		Nombre
+	%input#firstname{:name => 'firstname'}
+
+	%label
+		Apellido
+	%input#lastname{:name => 'lastname'}
+
+	%label
+		Edad
+	%input#age{:age => 'age'}
+	%br
+	%button.btn{:type => 'submit'}
+		Crear
