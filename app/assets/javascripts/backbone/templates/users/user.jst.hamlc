@@ -7,5 +7,5 @@
 %td
 	%a.btn.btn-small{:href => '#/edit/#{@user.id}'}
 		Editar
-	%button.btn.btn-small.btn-danger.destroy{:data-id => '#{@user.id}'}
+	%button.btn.btn-small.btn-danger.destroy
 		Eliminar

@@ -1,11 +1,11 @@
 <div class="container">	
-	<h1>Users Management</h1>
+	<h1>Administración de Usuarios</h1>
 	</hr>
 	<div id="page">
 	</div>
 </div>
 
 <script>
-	window.router = new UserRouter({ users: <%= @users.to_json().html_safe %>});
+	window.router = new UserRouter();
 	Backbone.history.start();
 </script>

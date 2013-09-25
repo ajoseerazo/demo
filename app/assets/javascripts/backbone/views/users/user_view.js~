@@ -14,6 +14,6 @@ var UserView = Backbone.View.extend({
 
 	destroy: function(){
 		this.model.destroy(); //Eliminamos el modelo
-		this.destroy(); 			//Eliminamos esta vista
+		this.remove(); 			//Eliminamos esta vista
 	}
 });

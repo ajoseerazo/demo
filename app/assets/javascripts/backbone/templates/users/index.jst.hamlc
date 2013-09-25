@@ -1,7 +1,7 @@
 %a.btn.btn-primary{:href => '#/new'}
 	Nuevo Usuario
 	
-%table.table.sprited
+%table.table.strpieded
 	%thead
 		%tr
 			%th Nombre

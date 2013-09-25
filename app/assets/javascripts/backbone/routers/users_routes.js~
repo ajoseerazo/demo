@@ -1,7 +1,14 @@
 var UserRouter = Backbone.Router.extend({
 	initialize: function(options){
 		this.users = new UserCollection();
-		this.users.reset( options.users ); //Agregamos a la coleccion los modelos nuevos
+		this.users.fetch({
+			success: function(){
+				console.log('Tenemos los modelos');
+			}, 
+			reset: true
+		});
+		console.log(this.users.toJSON());
+	//	this.users.reset( options.users ); //Agregamos a la coleccion los modelos nuevos
 	}, 
 	routes: {
 		'':'index',
@@ -10,7 +17,6 @@ var UserRouter = Backbone.Router.extend({
 	},
 	index: function(){
 		var indexView = new IndexView({users: this.users});
-		//indexView.render();
 		$('#page').html( indexView.render().el );
 	},
 	newUser: function(){
